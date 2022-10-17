@@ -228,9 +228,9 @@ footer {
 	}
 
 	.sidebar li {
-		line-height: 1.3em;
-		//background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
 		display: flex;
+        align-items: center;
+        justify-content: space-around;
 		padding-top: 5px;
 		margin-bottom: 5px;
 		list-style-type: none;
@@ -343,9 +343,6 @@ footer {
 .sidebar li {
 	line-height: 2em;
 	display: block;
-	padding-top: 5px;
-	margin-bottom: 5px;
-	list-style-type: none;
 }
 
  }
