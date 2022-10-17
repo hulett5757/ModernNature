@@ -230,7 +230,7 @@ footer {
 	.sidebar li {
 		line-height: 1.3em;
 		//background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
-		display: block;
+		display: flex;
 		padding-top: 5px;
 		margin-bottom: 5px;
 		list-style-type: none;
@@ -280,12 +280,23 @@ footer {
     background-repeat: no-repeat;
   }
 
-  .explanation {
+  .explanation  {
 	background-color: $accent4-color;
 	border: $primary-color solid 1rem;
     background-image: url("./Bryce_Grayscale.jpg");
-    background-position: right;
+    background-position: left;
     background-repeat: no-repeat;
+    h3 {
+		text-align: left;
+		margin-left: 600px;
+	}    
+	p {
+		text-align: left;
+		margin-left: 550px;
+		margin-right: 100px;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
   }
 
   .participation {
@@ -300,8 +311,19 @@ footer {
 	background-color: $accent4-color;
 	border: $primary-color solid 1rem;
     background-image: url("./Bryce_Grayscale.jpg");
-    background-position: right;
-    background-repeat: no-repeat;	
+    background-position: left;
+    background-repeat: no-repeat;
+	h3 {
+		text-align: left;
+		margin-left: 600px;
+	}    
+	p {
+		text-align: left;
+		margin-left: 550px;
+		margin-right: 100px;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}	
 }
 
 .requirements {
@@ -315,6 +337,15 @@ footer {
 
 .sidebar {
 	margin-left: 1400px;
+	
+}
+
+.sidebar li {
+	line-height: 2em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
 }
 
  }
