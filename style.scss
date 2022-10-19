@@ -137,16 +137,12 @@ color: $background-color;
 .explanation {
 	@include class;	
 	background-color: $accent4-color;
-	//background-image: url("./Bryce_Grayscale.jpg");
-	p {
 		@include paragraph;
 	}
-}
 
 .participation {
 	@include class;
 	background-color: $accent2-color;
-	//background-image: url("./Bryce_Grayscale.jpg");
 	p {
 		@include paragraph;	
 	}
@@ -155,7 +151,6 @@ color: $background-color;
 .benefits {
 	@include class;
 	background-color: $accent4-color;	
-	//background-image: url("./Bryce_Grayscale.jpg");
 	p {
 		@include paragraph;
 	}
@@ -164,7 +159,6 @@ color: $background-color;
 .requirements {
 	@include class;
 	background-color: $accent3-color;
-	//background-image: url("./Bryce_Grayscale.jpg");
 	p {
 		@include paragraph;
 	}
