@@ -170,11 +170,14 @@ color: $background-color;
 	}
 }
 footer {
+	font-family: $font-headings;
 	text-align: center;
 }
 
 	footer a:link, footer a:visited {
 		margin-right: 20px;
+		padding: 0 2em;
+		background-color: $accent4-color;
 	}
 
 .sidebar {
@@ -236,11 +239,11 @@ footer {
 		list-style-type: none;
 	}
 
-		.sidebar li a:link {
+	.sidebar li a:link {
 			color: #988F5E;
 		}
 
-		.sidebar li a:visited {
+	.sidebar li a:visited {
 			color: #B3AE94;
 		}
 
@@ -334,6 +337,13 @@ footer {
     background-repeat: no-repeat;
 }
 
+footer {
+	display: flex;
+	width: 100%;
+	align-content: center;
+	color: $accent1-color;
+
+}
 
 .sidebar {
 	margin-left: 1400px;

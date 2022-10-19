@@ -176,11 +176,14 @@ header h3 {
 }
 
 footer {
+  font-family: "Lora", serif;
   text-align: center;
 }
 
 footer a:link, footer a:visited {
   margin-right: 20px;
+  padding: 0 2em;
+  background-color: #ff7f27;
 }
 
 .sidebar {
@@ -328,6 +331,12 @@ footer a:link, footer a:visited {
     background-image: url("./Bryce_Grayscale.jpg");
     background-position: right;
     background-repeat: no-repeat;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    color: #ffffff;
   }
   .sidebar {
     margin-left: 1400px;
