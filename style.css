@@ -271,7 +271,7 @@ footer a:link, footer a:visited {
     font-size: 1.5rem;
   }
   p {
-    width: 600px;
+    width: 50%;
   }
   .preamble {
     background-color: #48925D;
@@ -283,17 +283,17 @@ footer a:link, footer a:visited {
   .explanation {
     background-color: #ff7f27;
     border: #c3c3c3 solid 1rem;
-    background-image: url("./Bryce_Grayscale.jpg");
+    background-image: url("./waterfall.jpg");
     background-position: left;
     background-repeat: no-repeat;
   }
   .explanation h3 {
     text-align: left;
-    margin-left: 600px;
+    margin-left: 50%;
   }
   .explanation p {
     text-align: left;
-    margin-left: 550px;
+    margin-left: 50%;
     margin-right: 100px;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -301,24 +301,24 @@ footer a:link, footer a:visited {
   .participation {
     background-color: #3f48cc;
     border: #c3c3c3 solid 1rem;
-    background-image: url("./Bryce_Grayscale.jpg");
+    background-image: url("./ocean.jpg");
     background-position: right;
     background-repeat: no-repeat;
   }
   .benefits {
     background-color: #ff7f27;
     border: #c3c3c3 solid 1rem;
-    background-image: url("./Bryce_Grayscale.jpg");
+    background-image: url("./sunflower.jpg");
     background-position: left;
     background-repeat: no-repeat;
   }
   .benefits h3 {
     text-align: left;
-    margin-left: 600px;
+    margin-left: 50%;
   }
   .benefits p {
     text-align: left;
-    margin-left: 550px;
+    margin-left: 50%;
     margin-right: 100px;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -326,7 +326,7 @@ footer a:link, footer a:visited {
   .requirements {
     background-color: #48925D;
     border: #c3c3c3 solid 1rem;
-    background-image: url("./Bryce_Grayscale.jpg");
+    background-image: url("./great-hunt.jpg");
     background-position: right;
     background-repeat: no-repeat;
   }
