@@ -26,7 +26,7 @@ $font-body: Arial, Helvetica, sans-serif;
 
 body {
 width: 100%;
-background-color: $background-color;
+background-color: $primary-color;
 font-family: $font-body;
 font-size: 16px;
 margin: 0;
@@ -82,7 +82,7 @@ abbr {
 .page-wrapper {
 	width: 100px;
 	height: 250px;
-	background: $primary-color;
+	background: $background-color;
 	border: 1rem solid;
 	border-color: $accent4-color;
 	margin: 40px 10px;
@@ -271,7 +271,7 @@ footer {
 
    .preamble {
 	background-color: $accent3-color;
-	border: $primary-color solid 1rem;
+	border: $background-color solid 1rem;
     background-image: url("./Bryce_Grayscale.jpg");
     background-position: right;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ footer {
 
   .explanation  {
 	background-color: $accent4-color;
-	border: $primary-color solid 1rem;
+	border: $background-color solid 1rem;
     background-image: url("./waterfall.jpg");
     background-position: left;
     background-repeat: no-repeat;
@@ -298,7 +298,7 @@ footer {
 
   .participation {
 	background-color: $accent2-color;
-	border: $primary-color solid 1rem;
+	border: $background-color solid 1rem;
     background-image: url("./ocean.jpg");
     background-position: right;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ footer {
 
 .benefits {
 	background-color: $accent4-color;
-	border: $primary-color solid 1rem;
+	border: $background-color solid 1rem;
     background-image: url("./sunflower.jpg");
     background-position: left;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ footer {
 
 .requirements {
 	background-color: $accent3-color;
-	border: $primary-color solid 1rem;
+	border: $background-color solid 1rem;
     background-image: url("./great-hunt.jpg");
     background-position: right;
     background-repeat: no-repeat;

@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 body {
   width: 100%;
-  background-color: #000000;
+  background-color: #c3c3c3;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -41,7 +41,7 @@ abbr {
 .page-wrapper {
   width: 100px;
   height: 250px;
-  background: #c3c3c3;
+  background: #000000;
   border: 1rem solid;
   border-color: #ff7f27;
   margin: 40px 10px;
@@ -275,14 +275,14 @@ footer a:link, footer a:visited {
   }
   .preamble {
     background-color: #48925D;
-    border: #c3c3c3 solid 1rem;
+    border: #000000 solid 1rem;
     background-image: url("./Bryce_Grayscale.jpg");
     background-position: right;
     background-repeat: no-repeat;
   }
   .explanation {
     background-color: #ff7f27;
-    border: #c3c3c3 solid 1rem;
+    border: #000000 solid 1rem;
     background-image: url("./waterfall.jpg");
     background-position: left;
     background-repeat: no-repeat;
@@ -300,14 +300,14 @@ footer a:link, footer a:visited {
   }
   .participation {
     background-color: #3f48cc;
-    border: #c3c3c3 solid 1rem;
+    border: #000000 solid 1rem;
     background-image: url("./ocean.jpg");
     background-position: right;
     background-repeat: no-repeat;
   }
   .benefits {
     background-color: #ff7f27;
-    border: #c3c3c3 solid 1rem;
+    border: #000000 solid 1rem;
     background-image: url("./sunflower.jpg");
     background-position: left;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ footer a:link, footer a:visited {
   }
   .requirements {
     background-color: #48925D;
-    border: #c3c3c3 solid 1rem;
+    border: #000000 solid 1rem;
     background-image: url("./great-hunt.jpg");
     background-position: right;
     background-repeat: no-repeat;
