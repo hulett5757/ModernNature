@@ -18,18 +18,18 @@ body {
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #ff7f27;
+  color: #B7A5DF;
 }
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #48925D;
+  color: #D4CDDC;
 }
 
 a:hover, a:focus, a:active {
   text-decoration: underline;
-  color: #3f48cc;
+  color: #9685BA;
 }
 
 abbr {
@@ -63,6 +63,7 @@ header h1 {
   border: solid 1rem;
   border-color: #ff7f27;
 }
+
 header h2 {
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +75,7 @@ header h2 {
   border: solid 1rem;
   border-color: #ff7f27;
 }
+
 header h3 {
   display: flex;
   flex-wrap: wrap;
@@ -85,13 +87,14 @@ header h3 {
 }
 
 .summary {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
   color: #ffffff;
 }
+
 .summary p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -101,13 +104,14 @@ header h3 {
 }
 
 .preamble {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
   background-color: #48925D;
 }
+
 .preamble p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -116,8 +120,8 @@ header h3 {
 }
 
 .explanation {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
@@ -129,13 +133,14 @@ header h3 {
 }
 
 .participation {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
   background-color: #3f48cc;
 }
+
 .participation p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -144,13 +149,14 @@ header h3 {
 }
 
 .benefits {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
   background-color: #ff7f27;
 }
+
 .benefits p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -159,13 +165,14 @@ header h3 {
 }
 
 .requirements {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
   background-color: #48925D;
 }
+
 .requirements p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -185,8 +192,9 @@ footer a:link, footer a:visited {
 }
 
 .sidebar {
-  display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*.sidebar .wrapper {
@@ -226,14 +234,11 @@ footer a:link, footer a:visited {
   white-space: wrap;
 }
 
-.sidebar {
-  position: absolute;
-  top: 0;
-}
 .sidebar ul {
   margin: 0;
   padding: 0;
 }
+
 .sidebar li {
   display: flex;
   align-items: center;
@@ -243,16 +248,12 @@ footer a:link, footer a:visited {
   list-style-type: none;
 }
 
-.sidebar li:nth-child(odd) {
-  margin-left: 50%;
-}
-
 .sidebar li a:link {
-  color: #ff7f27;
+  color: #988F5E;
 }
 
 .sidebar li a:visited {
-  color: #ffffff;
+  color: #B3AE94;
 }
 
 @media only screen and (min-width: 31em) {
@@ -350,5 +351,6 @@ footer a:link, footer a:visited {
     display: block;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=styles.css.map */

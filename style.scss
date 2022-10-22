@@ -42,8 +42,8 @@ padding: 0;
   }
 
 @mixin class() {
-	display: grid;
-    grid-template-columns: 1fr;
+	display: flex;
+    flex-direction: column;
 	width: 1200px;
 	margin: 20px 20px 20px 10px;
 	padding: 0 2rem;	
@@ -59,17 +59,17 @@ padding: 0;
  a:link {
 		font-weight: bold;
 		text-decoration: none;
-		color: #B7A5DF;
+		color: $accent4-color;
 		
 	}
 a:visited {
 		font-weight: bold;
 		text-decoration: none;
-		color: #D4CDDC;
+		color: $accent3-color;
 	}
 a:hover, a:focus, a:active {
 		text-decoration: underline;
-		color: #9685BA;
+		color: $accent2-color;
 	}
 
 abbr {
@@ -173,11 +173,10 @@ footer {
 		padding: 0 2em;
 		background-color: $accent4-color;
 	}
-
+	
 .sidebar {
-	position: absolute;
-	top: 0;
-	left: 0;
+   display: flex;
+   flex-wrap: wrap;	
 }
 
 	/*.sidebar .wrapper {
@@ -218,27 +217,33 @@ footer {
 		white-space: wrap;
 	}
 
+	.sidebar {
+		position: absolute;
+		top: 0;
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding-top: 5px;
+			margin-bottom: 5px;
+			list-style-type: none;
+		}
+	} 
 
-	.sidebar ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	.sidebar li {
-		display: flex;
-        align-items: center;
-        justify-content: space-around;
-		padding-top: 5px;
-		margin-bottom: 5px;
-		list-style-type: none;
+	.sidebar li:nth-child(odd) {
+		margin-left: 50%;
 	}
 
 	.sidebar li a:link {
-			color: #988F5E;
+			color: $accent4-color;
 		}
 
 	.sidebar li a:visited {
-			color: #B3AE94;
+			color: $accent1-color;
 		}
 
 @media only screen and (min-width: 31em) { 
