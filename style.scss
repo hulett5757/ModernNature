@@ -99,19 +99,29 @@ header {
 	 h1 {
 @include headings;
 color: $accent1-color;
-border: solid 1rem;
-border-color: $accent4-color;
-grid-column: 1/2;
-grid-row: 1/2;
+border: solid 1px;
+border-color: $background-color;
+background: $accent4-color;
+	box-shadow:
+	 -7px -7px 20px 0px rgba(255,255,255,.9),
+	 -4px -4px 5px 0px rgba(255,255,255,.9),
+	 7px 7px 20px 0px rgba(0,0,0,.2),
+	 4px 4px 5px 0px rgba(0,0,0,.3);
+	transition: all 0.3s ease;
 }
 
      h2 {
 @include headings;
 color: $accent1-color;
-border: solid 1rem;
-border-color: $accent4-color;
-grid-column: 1/2;
-grid-row: 2/3;	
+border: solid 1px;
+border-color: $background-color;
+background: $accent4-color;
+	box-shadow:
+	 -7px -7px 20px 0px rgba(255,255,255,.9),
+	 -4px -4px 5px 0px rgba(255,255,255,.9),
+	 7px 7px 20px 0px rgba(0,0,0,.2),
+	 4px 4px 5px 0px rgba(0,0,0,.3);
+	transition: all 0.3s ease;
 }
      h3 {
 @include headings;
@@ -125,9 +135,17 @@ color: $background-color;
 	p {
 		font-family: $font-body;
 		text-align: center;
-		padding: 0 15rem;
-		border: solid 1rem;
-        border-color: $accent4-color;
+		margin: 0 0 1rem 5rem;
+		padding: 0 10rem;
+		border: solid 1px;
+        border-color: $background-color;
+		background: $accent4-color;
+	box-shadow:
+	 -7px -7px 20px 0px rgba(255,255,255,.9),
+	 -4px -4px 5px 0px rgba(255,255,255,.9),
+	 7px 7px 20px 0px rgba(0,0,0,.2),
+	 4px 4px 5px 0px rgba(0,0,0,.3);
+	transition: all 0.3s ease;
 	}
 }
 
@@ -355,15 +373,9 @@ footer {
 .sidebar li:nth-child(even) {
 	margin-right:50%;
 	padding: 1em;
-}
-
-
-  .sidebar li:nth-child(even) {
-  background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
 	line-height: 42px;
 	border: none;
-  }
-  .sidebar li:nth-child(even) {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -433,18 +445,12 @@ footer {
 .sidebar li:nth-child(odd) {
 	margin-left: 50%;
 	padding: 1em;
-}
-
-.sidebar li:nth-child(odd) {
 	background: $accent3-color;
-  background: linear-gradient(0deg,$accent3-color 0%, $accent2-color 100%);
+    background: linear-gradient(0deg,$accent3-color 0%, $accent2-color 100%);
 	width: 130px;
 	height: 40px;
 	line-height: 42px;
 	border: none;
-	
-  }
-  .sidebar li:nth-child(odd){
 	position: relative;
 	display: block;
 	width: 100%;
