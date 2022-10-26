@@ -24,9 +24,35 @@ $accent4-color: #ff7f27;
 $font-headings:'Lora', serif;
 $font-body: Arial, Helvetica, sans-serif;
 
+#zen-intro {
+	grid-area: int;
+}
+
+#zen-supporting {
+	grid-area: sup;
+}
+
+#zen-participation {
+	grid-area: par;
+}
+
+#zen-benefits {
+	grid-area: ben;
+}
+
+#zen-requirements {
+	grid-area: req;
+}
+
+footer {
+	grid-area: ft;
+}
+
+aside {
+	grid-area: as;
+}
+
 body {
-display: grid;
-grid-template-columns: 1fr;
 width: 100%;
 background-color: $primary-color;
 font-family: $font-body;
@@ -34,6 +60,7 @@ font-size: 16px;
 margin: 0;
 padding: 0;
 }
+
 @mixin headings() {
 	display: flex;
 	flex-wrap: wrap;
@@ -82,13 +109,22 @@ abbr {
 
 /* specific divs */
 .page-wrapper {
-	width: 100px;
+	/*width: 100px;
 	height: 250px;
 	background: $accent3-color;
 	border: 1rem solid;
 	border-color: $accent4-color;
 	margin: 40px 10px;
-	position: relative;
+	position: relative;*/
+display: grid;
+grid-template-areas:
+"int"
+"as"
+"sup"
+"par"
+"ben"
+"req"
+"ft";
 }
 
 .intro {
@@ -151,7 +187,7 @@ color: $background-color;
 
 .preamble {
     @include class;
-	background-color: $accent3-color;
+	background-color: $accent4-color;
 	p {
 		@include paragraph;
 	}
@@ -160,7 +196,7 @@ color: $background-color;
 
 .explanation {
 	@include class;	
-	background-color: $accent4-color;
+	background-color: $accent3-color;
 		@include paragraph;
 	}
 
@@ -200,7 +236,6 @@ footer {
 .sidebar {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -359,6 +394,10 @@ footer {
 
 }
 
+.sidebar .wrapper {
+	    display: block;
+	}
+
 .sidebar {
 	position: absolute;
 	top: 0;
@@ -371,7 +410,7 @@ footer {
 
  
 .sidebar li:nth-child(even) {
-	margin-right:50%;
+	margin-right:35%;
 	padding: 1em;
     background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
 	line-height: 42px;
@@ -443,7 +482,7 @@ footer {
   }
 
 .sidebar li:nth-child(odd) {
-	margin-left: 50%;
+	margin-left: 35%;
 	padding: 1em;
 	background: $accent3-color;
     background: linear-gradient(0deg,$accent3-color 0%, $accent2-color 100%);
