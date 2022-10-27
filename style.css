@@ -43,6 +43,11 @@ body {
   padding: 0;
 }
 
+body {
+  background-image: url("./rectangle.jpg");
+  background-repeat: no-repeat;
+}
+
 a:link {
   font-weight: bold;
   text-decoration: none;

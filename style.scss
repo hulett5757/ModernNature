@@ -61,6 +61,11 @@ margin: 0;
 padding: 0;
 }
 
+body {
+	background-image: url("./rectangle.jpg");
+	background-repeat: no-repeat;
+}
+
 @mixin headings() {
 	display: flex;
 	flex-wrap: wrap;
