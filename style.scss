@@ -78,6 +78,15 @@ padding: 0;
 	padding: 0 2rem;	
 }
 
+@mixin sidebar-header() {
+	background-color: $accent2-color;
+	color: $accent1-color;
+	margin: 1rem;
+	padding: 10px;
+	width: 200px;
+	height: 16px;
+}
+
 @mixin paragraph() {
 	font-family: $font-body;
 	text-align: left;
@@ -226,6 +235,7 @@ color: $background-color;
 footer {
 	font-family: $font-headings;
 	text-align: center;
+	margin-bottom: 1rem;
 }
 
 	footer a:link, footer a:visited {
@@ -245,56 +255,46 @@ footer {
 		flex-wrap: wrap;
 		width: 100%;
 		justify-content: flex-start;
-		padding-top: 5px;
+		padding:.5rem;
 		margin-bottom: 5px;
 		list-style-type: none;
 		}
 	} 
 
 	.sidebar .wrapper {
-	    display: flex;
-		flex-wrap: wrap;
-		width: 100%;
+	   display: grid;
+	   grid-template-columns: 1fr 1fr 1fr;
+	   grid-gap: 1rem;
+	}
+    
+	.design-selection {
+		grid-column: 1/2;
+		background-color: $accent3-color;
+		margin-left: 4rem;
 	}
 
+	.design-archives {
+		grid-column: 2/3;
+		background-color: $accent4-color;
+	}
+
+	.zen-resources {
+		grid-column: 3/4;
+		background-color: $accent3-color;
+	}
+
+
 	.sidebar h3.select {
-		background-color: $accent2-color;
-		color: $accent1-color;
-		margin: 0 0 25px 0;
-		padding: 10px;
-		width: 200px;
-		height: 16px;
-		white-space: wrap;
+		@include sidebar-header;
 	}
 
 	.sidebar h3.archives {
-		background-color: $accent2-color;
-		color: $accent1-color;
-		margin: 0 0 25px 0;
-		padding: 10px;
-		width: 200px;
-		height: 16px;
-		white-space: wrap;
+		@include sidebar-header;
 	}
 
 	.sidebar h3.resources {
-		background-color: $accent2-color;
-		color: $accent1-color;
-		margin: 0 0 25px 0;
-		padding: 10px;
-		width: 200px;
-		height: 16px;
-		white-space: wrap;
+		@include sidebar-header;
 	}
-
-	
-	.sidebar li a:link {
-			color: $accent1-color;
-		}
-
-	.sidebar li a:visited {
-			color: $background-color;
-		}
 
 @media only screen and (min-width: 31em) { 
     body {
@@ -392,6 +392,18 @@ footer {
 	align-content: center;
 	color: $accent1-color;
 
+}
+
+.design-selection {
+	background-color: $primary-color;
+}
+
+.design-archives {
+	background-color: $primary-color;
+}
+
+.zen-resources {
+	background-color: $primary-color;
 }
 
 .sidebar .wrapper {
