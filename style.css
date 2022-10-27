@@ -67,13 +67,6 @@ abbr {
 
 /* specific divs */
 .page-wrapper {
-  /*width: 100px;
-  height: 250px;
-  background: $accent3-color;
-  border: 1rem solid;
-  border-color: $accent4-color;
-  margin: 40px 10px;
-  position: relative;*/
   display: grid;
   grid-template-areas: "int" "as" "sup" "par" "ben" "req" "ft";
 }
