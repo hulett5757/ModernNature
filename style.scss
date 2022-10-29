@@ -53,7 +53,6 @@ aside {
 }
 
 body {
-width: 100%;
 background-color: $primary-color;
 font-family: $font-body;
 font-size: 16px;
@@ -62,7 +61,7 @@ padding: 0;
 }
 
 body {
-	background-image: url("./rectangle.jpg");
+	background-image: url("./tree.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -132,10 +131,6 @@ grid-template-areas:
 "ben"
 "req"
 "ft";
-}
-
-.intro {
-	width: 1200px;
 }
 
 header {
@@ -300,6 +295,12 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
     }
+
+	@mixin even-class() {
+		border: $background-color solid 1rem;
+		background-position: right;
+        background-repeat: no-repeat;	
+	}
 	header {
 		h1 {
    display: flex;
@@ -323,11 +324,9 @@ footer {
    }
 
    .preamble {
+	@include even-class;
 	background-color: $accent3-color;
-	border: $background-color solid 1rem;
     background-image: url("./Bryce_Grayscale.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
   }
 
   .explanation  {
@@ -350,11 +349,9 @@ footer {
   }
 
   .participation {
+	@include even-class;
 	background-color: $accent2-color;
-	border: $background-color solid 1rem;
     background-image: url("./ocean.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
   }
 
 .benefits {
@@ -377,11 +374,10 @@ footer {
 }
 
 .requirements {
+	@include even-class;
 	background-color: $accent3-color;
-	border: $background-color solid 1rem;
     background-image: url("./great-hunt.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
+   
 }
 
 footer {
