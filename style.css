@@ -59,7 +59,9 @@ a:visited {
   color: #ffffff;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: underline;
   color: #c3c3c3;
 }
@@ -212,7 +214,8 @@ footer {
   margin-bottom: 1rem;
 }
 
-footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
   margin-right: 20px;
   padding: 0 2em;
   background-color: #ff7f27;
@@ -287,7 +290,7 @@ footer a:link, footer a:visited {
 
 @media only screen and (min-width: 31em) {
   body {
-    max-width: 1400px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
