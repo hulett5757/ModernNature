@@ -70,8 +70,14 @@ body {
 	flex-wrap: wrap;
 	text-decoration: none;
 	font-family: $font-headings;
-	margin: 1rem 10rem;
+	margin:0 15rem 1rem 10rem;
 	padding: 1rem;
+	box-shadow:
+			-7px -7px 20px 0px rgba(255, 255, 255, .9),
+			-4px -4px 5px 0px rgba(255, 255, 255, .9),
+			7px 7px 20px 0px rgba(0, 0, 0, .2),
+			4px 4px 5px 0px rgba(0, 0, 0, .3);
+		transition: all 0.3s ease;
 }
 
 @mixin class() {
@@ -144,12 +150,7 @@ header {
 		border: solid 1px;
 		border-color: $background-color;
 		background: $accent4-color;
-		box-shadow:
-			-7px -7px 20px 0px rgba(255, 255, 255, .9),
-			-4px -4px 5px 0px rgba(255, 255, 255, .9),
-			7px 7px 20px 0px rgba(0, 0, 0, .2),
-			4px 4px 5px 0px rgba(0, 0, 0, .3);
-		transition: all 0.3s ease;
+		
 	}
 
 	h2 {
@@ -158,12 +159,6 @@ header {
 		border: solid 1px;
 		border-color: $background-color;
 		background: $accent4-color;
-		box-shadow:
-			-7px -7px 20px 0px rgba(255, 255, 255, .9),
-			-4px -4px 5px 0px rgba(255, 255, 255, .9),
-			7px 7px 20px 0px rgba(0, 0, 0, .2),
-			4px 4px 5px 0px rgba(0, 0, 0, .3);
-		transition: all 0.3s ease;
 	}
 
 	h3 {
@@ -305,10 +300,16 @@ footer a:visited {
 }
 
 @media only screen and (min-width: 31em) {
-	body {
-		max-width: 100%;
+
+	.page-wrapper {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"int int as"
+			"sup sup as"
+			"par par as"
+			"ben ben as"
+			"req req as"
+			"ft ft ft";
 	}
 
 	@mixin even-class() {
@@ -317,23 +318,23 @@ footer a:visited {
 		background-repeat: no-repeat;
 	}
 
+	@mixin odd-class() {
+		border: $background-color solid 1rem;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
 	header {
-		h1 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 3rem;
+	  h1 {
+		font-size: 3rem;
 		}
 
-		h2 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 2rem;
+	  h2 {
+		font-size: 2rem;
 		}
 
-		h3 {
-			font-size: 1.5rem;
+	  h3 {
+		font-size: 1.5rem;
 		}
 	}
 
@@ -348,17 +349,13 @@ footer a:visited {
 	}
 
 	.explanation {
+		@include odd-class;
 		background-color: $accent4-color;
-		border: $background-color solid 1rem;
 		background-image: url("./waterfall.jpg");
-		background-position: left;
-		background-repeat: no-repeat;
-
 		h3 {
 			text-align: left;
 			margin-left: 50%;
 		}
-
 		p {
 			text-align: left;
 			margin-left: 50%;
@@ -375,17 +372,13 @@ footer a:visited {
 	}
 
 	.benefits {
+		@include odd-class;
 		background-color: $accent4-color;
-		border: $background-color solid 1rem;
 		background-image: url("./sunflower.jpg");
-		background-position: left;
-		background-repeat: no-repeat;
-
 		h3 {
 			text-align: left;
 			margin-left: 50%;
 		}
-
 		p {
 			text-align: left;
 			margin-left: 50%;
@@ -405,9 +398,8 @@ footer a:visited {
 	footer {
 		display: flex;
 		width: 100%;
-		align-content: center;
+		justify-content: center;
 		color: $accent1-color;
-
 	}
 
 	.design-selection {
@@ -424,22 +416,20 @@ footer a:visited {
 
 	.sidebar .wrapper {
 		display: block;
+		margin-right: 8rem;
 	}
 
 	.sidebar {
-		position: absolute;
-		top: 0;
-		margin-left: 1350px;
-
+	   margin:0 2rem 0 0;
 		li {
-			line-height: 2em;
-			display: block;
+		  line-height: 2em;
+		  display: block;
 		}
 	}
 
 
 	.sidebar li:nth-child(even) {
-		margin-right: 35%;
+		margin-right: 50%;
 		padding: 1em;
 		background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
 		line-height: 42px;
