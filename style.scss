@@ -324,6 +324,19 @@ footer a:visited {
 		background-repeat: no-repeat;
 	}
 
+	@mixin odd-h3() {
+	  text-align: left;
+	  margin-left: 50%;
+	}
+
+	@mixin odd-paragraph() {
+	  text-align: left;
+	  margin-left: 50%;
+	  margin-right: 100px;
+	  padding-right: 2rem;
+	  padding-left: 2rem;	
+	}
+
 	header {
 	  h1 {
 		font-size: 3rem;
@@ -353,15 +366,10 @@ footer a:visited {
 		background-color: $accent4-color;
 		background-image: url("./waterfall.jpg");
 		h3 {
-			text-align: left;
-			margin-left: 50%;
+		  @include odd-h3;
 		}
 		p {
-			text-align: left;
-			margin-left: 50%;
-			margin-right: 100px;
-			padding-right: 2rem;
-			padding-left: 2rem;
+			@include odd-paragraph;
 		}
 	}
 
@@ -376,15 +384,10 @@ footer a:visited {
 		background-color: $accent4-color;
 		background-image: url("./sunflower.jpg");
 		h3 {
-			text-align: left;
-			margin-left: 50%;
+			@include odd-h3;
 		}
 		p {
-			text-align: left;
-			margin-left: 50%;
-			margin-right: 100px;
-			padding-right: 2rem;
-			padding-left: 2rem;
+			@include odd-paragraph;
 		}
 	}
 
