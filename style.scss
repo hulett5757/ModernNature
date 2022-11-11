@@ -313,15 +313,17 @@ footer a:visited {
 	}
 
 	@mixin even-class() {
-		border: $background-color solid 1rem;
+		border: $background-color solid .5rem;
 		background-position: right;
 		background-repeat: no-repeat;
+		margin-left: 3rem;
 	}
 
 	@mixin odd-class() {
-		border: $background-color solid 1rem;
+		border: $background-color solid .5rem;
 		background-position: left;
 		background-repeat: no-repeat;
+		margin-left: 3.5rem;
 	}
 
 	@mixin odd-h3() {
@@ -359,6 +361,7 @@ footer a:visited {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./Bryce_Grayscale.jpg");
+		transform: skewX(10deg);
 	}
 
 	.explanation {
@@ -371,12 +374,14 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
+		transform: skewX(-10deg);
 	}
 
 	.participation {
 		@include even-class;
 		background-color: $accent2-color;
 		background-image: url("./ocean.jpg");
+		transform: skewX(10deg);
 	}
 
 	.benefits {
@@ -389,13 +394,14 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
+		transform: skewX(-15deg);
 	}
 
 	.requirements {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./great-hunt.jpg");
-
+		transform: skewX(8deg);
 	}
 
 	footer {
@@ -411,10 +417,12 @@ footer a:visited {
 
 	.design-archives {
 		background-color: $primary-color;
+		margin-right: 1rem;
 	}
 
 	.zen-resources {
 		background-color: $primary-color;
+		margin-right: 1rem;
 	}
 
 	.sidebar .wrapper {
