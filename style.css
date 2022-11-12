@@ -343,7 +343,7 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #3f48cc;
     background-image: url("./ocean.jpg");
-    transform: skewX(10deg);
+    transform: skewx(10deg);
   }
   .benefits {
     border: #000000 solid 0.5rem;

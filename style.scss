@@ -381,7 +381,7 @@ footer a:visited {
 		@include even-class;
 		background-color: $accent2-color;
 		background-image: url("./ocean.jpg");
-		transform: skewX(10deg);
+		transform: skewx(10deg);
 	}
 
 	.benefits {
