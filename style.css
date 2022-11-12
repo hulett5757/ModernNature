@@ -314,7 +314,7 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #48925D;
     background-image: url("./Bryce_Grayscale.jpg");
-    transform: skewX(10deg);
+    animation: flip 45s infinite;
   }
   .explanation {
     border: #000000 solid 0.5rem;
@@ -323,7 +323,7 @@ footer a:visited {
     margin-left: 3.5rem;
     background-color: #ff7f27;
     background-image: url("./waterfall.jpg");
-    transform: skewX(-10deg);
+    animation: flip 45s infinite;
   }
   .explanation h3 {
     text-align: left;
@@ -343,7 +343,7 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #3f48cc;
     background-image: url("./ocean.jpg");
-    transform: skewx(10deg);
+    animation: flip 45s infinite;
   }
   .benefits {
     border: #000000 solid 0.5rem;
@@ -352,7 +352,7 @@ footer a:visited {
     margin-left: 3.5rem;
     background-color: #ff7f27;
     background-image: url("./sunflower.jpg");
-    transform: skewX(-15deg);
+    animation: flip 45s infinite;
   }
   .benefits h3 {
     text-align: left;
@@ -372,7 +372,15 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #48925D;
     background-image: url("./great-hunt.jpg");
-    transform: skewX(8deg);
+    animation: flip 45s infinite;
+  }
+  @keyframes flip {
+    from {
+      transform: skewX(0deg);
+    }
+    to {
+      transform: skewX(180deg);
+    }
   }
   footer {
     display: flex;

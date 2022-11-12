@@ -361,7 +361,8 @@ footer a:visited {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./Bryce_Grayscale.jpg");
-		transform: skewX(10deg);
+		animation: flip 45s infinite;
+		//transform: skewX(10deg);
 	}
 
 	.explanation {
@@ -374,14 +375,16 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
-		transform: skewX(-10deg);
+		animation: flip 45s infinite;
+		//transform: skewX(-10deg);
 	}
 
 	.participation {
 		@include even-class;
 		background-color: $accent2-color;
 		background-image: url("./ocean.jpg");
-		transform: skewx(10deg);
+		animation: flip 45s infinite;
+		//transform: skewx(10deg);
 	}
 
 	.benefits {
@@ -394,15 +397,23 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
-		transform: skewX(-15deg);
+		animation: flip 45s infinite;
+		//transform: skewX(-15deg);
 	}
 
 	.requirements {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./great-hunt.jpg");
-		transform: skewX(8deg);
+		animation: flip 45s infinite;
+		//transform: skewX(8deg);
 	}
+
+	@keyframes flip {
+		from{transform: skewX(0deg)}
+		to{transform: skewX(180deg)}
+	}
+	
 
 	footer {
 		display: flex;
