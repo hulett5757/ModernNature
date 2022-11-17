@@ -53,7 +53,7 @@ aside {
 }
 
 body {
-	background-color: $primary-color;
+	background: $primary-color;
 	font-family: $font-body;
 	font-size: 16px;
 	margin: 0;
@@ -63,6 +63,7 @@ body {
 body {
 	background-image: url("./tree.jpg");
 	background-repeat: no-repeat;
+	
 }
 
 @mixin headings() {
@@ -190,7 +191,7 @@ header {
 
 .preamble {
 	@include class;
-	background-color: $accent4-color;
+	background: radial-gradient($accent4-color, $accent3-color);
 
 	p {
 		@include paragraph;
@@ -200,13 +201,13 @@ header {
 
 .explanation {
 	@include class;
-	background-color: $accent3-color;
+	background: radial-gradient($accent3-color, $accent4-color);
 	@include paragraph;
 }
 
 .participation {
 	@include class;
-	background-color: $accent2-color;
+	background: radial-gradient($accent2-color, $accent3-color);
 
 	p {
 		@include paragraph;
@@ -215,7 +216,7 @@ header {
 
 .benefits {
 	@include class;
-	background-color: $accent4-color;
+	background: radial-gradient($accent2-color, $accent4-color);
 
 	p {
 		@include paragraph;
@@ -224,7 +225,7 @@ header {
 
 .requirements {
 	@include class;
-	background-color: $accent3-color;
+	background: radial-gradient($accent4-color, $accent2-color);
 
 	p {
 		@include paragraph;
@@ -361,8 +362,8 @@ footer a:visited {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./Bryce_Grayscale.jpg");
-		animation: flip 45s infinite;
-		//transform: skewX(10deg);
+		animation: flip 60s 15s infinite;
+		transform: skewX(10deg);
 	}
 
 	.explanation {
@@ -375,16 +376,16 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
-		animation: flip 45s infinite;
-		//transform: skewX(-10deg);
+		animation: flip 60s 15s infinite;
+		transform: skewX(-10deg);
 	}
 
 	.participation {
 		@include even-class;
 		background-color: $accent2-color;
 		background-image: url("./ocean.jpg");
-		animation: flip 45s infinite;
-		//transform: skewx(10deg);
+		animation: flip 60s 15s infinite;
+		transform: skewx(10deg);
 	}
 
 	.benefits {
@@ -397,16 +398,16 @@ footer a:visited {
 		p {
 			@include odd-paragraph;
 		}
-		animation: flip 45s infinite;
-		//transform: skewX(-15deg);
+		animation: flip 60s 15s infinite;
+		transform: skewX(-15deg);
 	}
 
 	.requirements {
 		@include even-class;
 		background-color: $accent3-color;
 		background-image: url("./great-hunt.jpg");
-		animation: flip 45s infinite;
-		//transform: skewX(8deg);
+		animation: flip 60s 15s infinite;
+		transform: skewX(8deg);
 	}
 
 	@keyframes flip {

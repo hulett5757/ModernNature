@@ -35,7 +35,7 @@ aside {
 }
 
 body {
-  background-color: #c3c3c3;
+  background: #c3c3c3;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -143,7 +143,7 @@ header h3 {
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
-  background-color: #ff7f27;
+  background: radial-gradient(#ff7f27, #48925D);
 }
 .preamble p {
   font-family: Arial, Helvetica, sans-serif;
@@ -158,7 +158,7 @@ header h3 {
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
-  background-color: #48925D;
+  background: radial-gradient(#48925D, #ff7f27);
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   color: #000000;
@@ -171,7 +171,7 @@ header h3 {
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
-  background-color: #3f48cc;
+  background: radial-gradient(#3f48cc, #48925D);
 }
 .participation p {
   font-family: Arial, Helvetica, sans-serif;
@@ -186,7 +186,7 @@ header h3 {
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
-  background-color: #ff7f27;
+  background: radial-gradient(#3f48cc, #ff7f27);
 }
 .benefits p {
   font-family: Arial, Helvetica, sans-serif;
@@ -201,7 +201,7 @@ header h3 {
   width: 1200px;
   margin: 20px 20px 20px 10px;
   padding: 0 2rem;
-  background-color: #48925D;
+  background: radial-gradient(#ff7f27, #3f48cc);
 }
 .requirements p {
   font-family: Arial, Helvetica, sans-serif;
@@ -314,7 +314,8 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #48925D;
     background-image: url("./Bryce_Grayscale.jpg");
-    animation: flip 45s infinite;
+    animation: flip 60s 15s infinite;
+    transform: skewX(10deg);
   }
   .explanation {
     border: #000000 solid 0.5rem;
@@ -323,7 +324,8 @@ footer a:visited {
     margin-left: 3.5rem;
     background-color: #ff7f27;
     background-image: url("./waterfall.jpg");
-    animation: flip 45s infinite;
+    animation: flip 60s 15s infinite;
+    transform: skewX(-10deg);
   }
   .explanation h3 {
     text-align: left;
@@ -343,7 +345,8 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #3f48cc;
     background-image: url("./ocean.jpg");
-    animation: flip 45s infinite;
+    animation: flip 60s 15s infinite;
+    transform: skewx(10deg);
   }
   .benefits {
     border: #000000 solid 0.5rem;
@@ -352,7 +355,8 @@ footer a:visited {
     margin-left: 3.5rem;
     background-color: #ff7f27;
     background-image: url("./sunflower.jpg");
-    animation: flip 45s infinite;
+    animation: flip 60s 15s infinite;
+    transform: skewX(-15deg);
   }
   .benefits h3 {
     text-align: left;
@@ -372,7 +376,8 @@ footer a:visited {
     margin-left: 3rem;
     background-color: #48925D;
     background-image: url("./great-hunt.jpg");
-    animation: flip 45s infinite;
+    animation: flip 60s 15s infinite;
+    transform: skewX(8deg);
   }
   @keyframes flip {
     from {
