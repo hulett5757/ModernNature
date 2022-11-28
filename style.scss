@@ -107,7 +107,6 @@ body {
 
 @mixin paragraph() {
 	font-family: $font-body;
-	font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
 	text-align: left;
 	color: $background-color;
 	padding: 0 2rem;
