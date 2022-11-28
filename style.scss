@@ -11,6 +11,12 @@
 /* basic elements */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+:root {
+	--fluid-type-min: 1.5rem;
+    --fluid-type-max: 3rem;
+    --fluid-type-target: 3vw;
+}
+
 //Variables
 //colors
 $background-color: #000000;
@@ -71,6 +77,7 @@ body {
 	flex-wrap: wrap;
 	text-decoration: none;
 	font-family: $font-headings;
+	font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
 	margin:0 15rem 1rem 10rem;
 	padding: 1rem;
 	box-shadow:
@@ -100,6 +107,7 @@ body {
 
 @mixin paragraph() {
 	font-family: $font-body;
+	font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
 	text-align: left;
 	color: $background-color;
 	padding: 0 2rem;
@@ -338,20 +346,6 @@ footer a:visited {
 	  margin-right: 100px;
 	  padding-right: 2rem;
 	  padding-left: 2rem;	
-	}
-
-	header {
-	  h1 {
-		font-size: 3rem;
-		}
-
-	  h2 {
-		font-size: 2rem;
-		}
-
-	  h3 {
-		font-size: 1.5rem;
-		}
 	}
 
 	p {

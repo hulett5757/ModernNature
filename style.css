@@ -6,6 +6,12 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+:root {
+  --fluid-type-min: 1.5rem;
+  --fluid-type-max: 3rem;
+  --fluid-type-target: 3vw;
+}
+
 #zen-intro {
   grid-area: int;
 }
@@ -82,6 +88,7 @@ header h1 {
   flex-wrap: wrap;
   text-decoration: none;
   font-family: "Lora", serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   margin: 0 15rem 1rem 10rem;
   padding: 1rem;
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
@@ -96,6 +103,7 @@ header h2 {
   flex-wrap: wrap;
   text-decoration: none;
   font-family: "Lora", serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   margin: 0 15rem 1rem 10rem;
   padding: 1rem;
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
@@ -110,6 +118,7 @@ header h3 {
   flex-wrap: wrap;
   text-decoration: none;
   font-family: "Lora", serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   margin: 0 15rem 1rem 10rem;
   padding: 1rem;
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
@@ -147,6 +156,7 @@ header h3 {
 }
 .preamble p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   text-align: left;
   color: #000000;
   padding: 0 2rem;
@@ -160,6 +170,7 @@ header h3 {
   padding: 0 2rem;
   background: radial-gradient(#48925D, #ff7f27);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   text-align: left;
   color: #000000;
   padding: 0 2rem;
@@ -175,6 +186,7 @@ header h3 {
 }
 .participation p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   text-align: left;
   color: #000000;
   padding: 0 2rem;
@@ -190,6 +202,7 @@ header h3 {
 }
 .benefits p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   text-align: left;
   color: #000000;
   padding: 0 2rem;
@@ -205,6 +218,7 @@ header h3 {
 }
 .requirements p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(var(--fluid-type-min), var(--fluid-type-target), var(--fluid-type-max));
   text-align: left;
   color: #000000;
   padding: 0 2rem;
@@ -294,15 +308,6 @@ footer a:visited {
   .page-wrapper {
     display: grid;
     grid-template-areas: "int int as" "sup sup as" "par par as" "ben ben as" "req req as" "ft ft ft";
-  }
-  header h1 {
-    font-size: 3rem;
-  }
-  header h2 {
-    font-size: 2rem;
-  }
-  header h3 {
-    font-size: 1.5rem;
   }
   p {
     width: 50%;
